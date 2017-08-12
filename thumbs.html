@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thumbs Up</title>
+    <meta charset='utf-8' />
+    <link rel="stylesheet" type="text/css" href="bundle/thumbs.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bundle/thumbs.js"></script>
+
+    <div id="response">
+        <label>
+            <input type="radio" name="vote" value="up" onclick="reveal([$('#comments'), $('#email'), $('#finished')])" />
+            <img class="thumb" src="bundle/thumbsup-128px.png" />
+        </label>
+        <label>
+            <input type="radio" name="vote" value="down" onclick="reveal([$('#comments'), $('#email'), $('#finished')])" />
+            <img class="thumb" src="bundle/thumbsdown-128px.png" />
+        </label>
+        <input id="comments" type="text" class="text" name="comment" value="Additional comments (optional)" style="margin-left: 6px;" onclick="emptyText($(this))" />
+        <input id="email" type="text" class="text" name="email" value="email address (optional)" onclick="emptyText($(this))" />
+        <input id="finished" type="submit" class="submit" onclick="voteSubmitted()" />
+    </div>
+</body>
+
+</html>

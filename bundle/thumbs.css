@@ -1,0 +1,52 @@
+/* to hide the radio dial button */
+
+label>input {
+    visibility: hidden;
+    width: 1px;
+}
+
+
+/* to make thumb act like radio dial button */
+
+label>input+img {
+    /* IMAGE STYLES */
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+
+/* thumb icons */
+
+.thumb {
+    display: inline-block;
+    width: 16px;
+    transform: translateY(6px);
+}
+
+/* for selected thumb */
+
+label>input:checked+img {
+    /* (RADIO CHECKED) IMAGE STYLES */
+    border: 2px solid #6AAC3B;
+    border-radius: 16px;
+}
+
+
+/* for text fields */
+
+.text {
+    width: 200px;
+    height: 1.3em;
+    border-radius: 3px;
+    border-width: 1px;
+    background-color: #ffffff;
+    display: none;
+}
+
+
+/* for submit button */
+
+.submit {
+    width: 60px;
+    display: none;
+}
