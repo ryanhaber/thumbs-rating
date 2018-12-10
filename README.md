@@ -2,7 +2,7 @@
 A simple plugin for a thumbs up/down with optional feedback that sends results to Airtable (a simple cloud db)
 
 ## To use
-You need an:
+You need:
 
 * account with [Airtable cloud db](www.airtable.com)
 * airtable table set up with 4 columns
